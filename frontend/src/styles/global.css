@@ -1,0 +1,108 @@
+/* src/styles/globals.css */
+:root {
+    --primary-bg: #f5f0dc;
+    --header-bg: #a6cbd8;
+    --button-primary: #d29b6e;
+    --button-secondary: #7bb0a8;
+    --text-dark: #333;
+    --link-color: #555;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: var(--primary-bg);
+  }
+  
+  .navbar {
+    background-color: var(--header-bg);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-dark);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .login-box {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .button.login {
+    background-color: var(--button-primary);
+    color: white;
+  }
+  
+  .button.register {
+    background-color: var(--button-secondary);
+    color: white;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
